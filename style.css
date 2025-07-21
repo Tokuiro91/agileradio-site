@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.radio-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  width: 100vh;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  text-align: center;
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  object-fit: cover;
+  aspect-ratio: 3/2;
+}
+
+.radio-content {
+  padding: 24px 20px;
+}
+
+.live-indicator {
+  color: #ff4c4c;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0 0 18px 0;
+  font-weight: 700;
+}
+
+#play-btn {
+  background-color: #ff4444;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 12px 28px;
+  border-radius: 100px;
+  height: 10vh;
+  width: 10vh;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 68, 68, 0.4);
+  text-align: center;
+}
+
+#play-btn:hover {
+  background-color: #ff6666;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 420px) {
+  .radio-card {
+    width: 30%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #play-btn {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+}
